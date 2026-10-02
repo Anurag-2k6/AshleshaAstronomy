@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Space Elevator — an interactive journey through the scales of the Universe by Ashlesha Astronomy Club." />
+  <title>Space Elevator | Ashlesha Astronomy Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="nebula nebula-one" aria-hidden="true"></div>
+  <div class="nebula nebula-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">✦</div>
+      <div>
+        <span>Ashlesha Astronomy Club</span>
+        <small>VNIT • 2026–27</small>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <span id="levelCounter">01 / 07</span>
+      <div class="progress-track"><div id="progressBar"></div></div>
+    </div>
+    <button class="sound-btn" id="soundToggle" type="button" aria-label="Toggle ambient sound">♫ <span>Sound</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AN INTERACTIVE COSMIC JOURNEY</p>
+        <h1>SPACE<br><span>ELEVATOR</span></h1>
+        <p class="hero-text">From the microscopic to the unimaginably vast — climb through seven scales and discover where we fit in the Universe.</p>
+        <button class="primary-btn" id="startBtn">Begin the Journey <span>↓</span></button>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="earth-glow"></div>
+        <div class="earth">🌍</div>
+        <div class="elevator-cable"></div>
+        <div class="elevator-car">▲</div>
+      </div>
+    </section>
+
+    <section class="elevator" id="elevator">
+      <div class="scale-rail">
+        <div class="rail-line"></div>
+        <div id="railMarkers"></div>
+      </div>
+
+      <div class="level-content">
+        <div class="level-meta">
+          <p class="eyebrow" id="levelEyebrow">LEVEL 01</p>
+          <h2 id="levelTitle">Micro World</h2>
+          <p id="levelSubtitle">Where the Universe gets unbelievably small.</p>
+        </div>
+
+        <div class="visual-card" id="visualCard">
+          <div class="visual-icon" id="visualIcon">🧬</div>
+          <div class="visual-orbit o1"></div>
+          <div class="visual-orbit o2"></div>
+          <div class="scale-readout">
+            <span>REPRESENTATIVE SCALE</span>
+            <strong id="scaleText">~10⁻⁶ m</strong>
+          </div>
+        </div>
+
+        <div class="fact-card">
+          <div class="fact-head"><span>✦</span> DID YOU KNOW?</div>
+          <p id="fact1"></p>
+          <p id="fact2"></p>
+        </div>
+
+        <div class="controls">
+          <button class="secondary-btn" id="prevBtn">← Previous</button>
+          <div class="dots" id="dots"></div>
+          <button class="primary-btn" id="nextBtn">Next Level →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scale-section">
+      <p class="eyebrow">THE COSMIC LADDER</p>
+      <h2>Seven steps. One perspective.</h2>
+      <p class="section-sub">Every step changes the meaning of “big”.</p>
+      <div class="level-grid" id="levelGrid"></div>
+    </section>
+
+    <section class="quiz-section">
+      <div class="quiz-shell">
+        <div>
+          <p class="eyebrow">BONUS • MINI ASTRONOMY QUIZ</p>
+          <h2>Test your cosmic sense.</h2>
+          <p class="section-sub">Three quick questions from the journey.</p>
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-top"><span id="quizCount">Question 1 / 3</span><span id="quizScore">Score: 0</span></div>
+          <h3 id="quizQuestion"></h3>
+          <div id="quizOptions" class="quiz-options"></div>
+          <button class="secondary-btn quiz-next" id="quizNext" disabled>Next Question →</button>
+          <p id="quizResult" class="quiz-result"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-card">
+        <p class="eyebrow">LOOK UP</p>
+        <h2>We are small.<br><span>Our curiosity isn't.</span></h2>
+        <p>Keep asking. Keep exploring. The Universe is bigger than any single scale can show.</p>
+        <button class="primary-btn" id="restartBtn">↺ Ride Again</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>SPACE ELEVATOR • Ashlesha Astronomy Club</span>
+    <span>Built with HTML • CSS • JavaScript</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

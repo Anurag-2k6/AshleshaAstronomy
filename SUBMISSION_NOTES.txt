@@ -1,0 +1,14 @@
+Ashlesha Astronomy Club Recruitment 2026-27
+Web Development Task: Interactive Space Elevator
+
+Included:
+- index.html
+- styles.css
+- script.js
+- README.md
+
+Before submission:
+1. Create your GitHub repository and push these files.
+2. Enable GitHub Pages.
+3. Put the repository URL and live website URL in the final submission.
+4. The recruitment PDF asks applicants to mention significant AI assistance; this is disclosed in README.md.
